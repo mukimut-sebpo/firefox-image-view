@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "Corner Media",
+    "version": "1.0",
+  
+    "description": "When a image or video is opened, force firefox to put it in the left top starting position.",
+  
+    "icons": {
+      "48": "icons/border-48.png"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["*://*/*.png", "*://*/*.jpg", "*://*/*.jpeg", "*://*/*.mp4", "file:///*/*"],
+        "js": ["script.js"]
+      }
+    ]
+  }
+  
